@@ -2,12 +2,12 @@
   'use strict';
 
   /* @ngdoc object
-   * @name home
+   * @name greyBody
    * @description
    *
    */
   angular
-    .module('home', [
+    .module('greyBody', [
       'ui.router'
     ]);
 }());

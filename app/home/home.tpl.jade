@@ -1,2 +1,38 @@
-h2 home
-p {{home.ctrlName}}
+md-content.md-padding(layout='column', layout-fill)
+  md-tabs(flex, md-border-bottom)
+    md-tab(label='Articles')
+      md-content(layout-align='space-between center').md-padding
+        h1.md-display-2 Articles written by MDO
+
+        md-card
+          md-card-content
+            h2 Article card
+            p With some abstract of the Article
+          md-card-footer we can place some tags or user info
+
+        md-card
+          md-card-content
+            h2 Article card
+            p With some abstract of the Article
+          md-card-footer.md-actions
+            md-button can place some
+            md-button tags or user info
+
+        md-card
+          md-card-content
+            h2 Article card
+            p With some abstract of the Article
+            md-card-footer we can place some tags or user info
+
+    md-tab(label='Tutorials')
+      md-content.md-padding
+        h1.md-display-2 Tutorials made by MDO
+    md-tab(label='Projects')
+      md-content.md-padding
+        h1.md-display-2 Projects lead by MDO
+    md-tab(label='Tools')
+      md-content.md-padding
+        h1.md-display-2 Tools built by MDO
+    md-tab(label='About')
+      md-content.md-padding
+        h1.md-display-2 About ModernDev.org (MDO)

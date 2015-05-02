@@ -3,9 +3,9 @@
 
   angular
     .module('moderndev')
-    .config(config);
+    .config(routes);
 
-  function config($urlRouterProvider) {
+  function routes($urlRouterProvider) {
     $urlRouterProvider.otherwise('/home');
   }
 }());

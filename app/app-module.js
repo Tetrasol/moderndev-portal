@@ -10,6 +10,9 @@
     .module('moderndev', [
       'ngMaterial',
       'ui.router',
-      'home'
+      'home',
+      'blueFooter',
+      'blueHeader',
+      'greyBody'
     ]);
 }());

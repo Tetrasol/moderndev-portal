@@ -2,12 +2,11 @@
   'use strict';
 
   /* @ngdoc object
-   * @name home
+   * @name blueHeader
    * @description
    *
    */
   angular
-    .module('home', [
-      'ui.router'
+    .module('blueHeader', [
     ]);
 }());

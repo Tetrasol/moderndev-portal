@@ -11,10 +11,12 @@ html(lang='en' data-ng-app='moderndev')
     |<!-- endbower -->
     |<!-- inject:css -->
     |<!-- endinject -->
-  body
+  body(layout='column', layout-fill)
+    blue-header(flex-order='1')
 
-    div(data-ui-view)
+    div(data-ui-view, flex, flex-order='2')
 
+    blue-footer(flex-order='3')
     |<!-- bower:js -->
     |<!-- endbower -->
     |<!-- inject:js -->
