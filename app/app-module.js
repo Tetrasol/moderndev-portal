@@ -13,6 +13,7 @@
       'home',
       'blueFooter',
       'blueHeader',
-      'greyBody'
+      'greyBody',
+      'mdoCard'
     ]);
 }());
