@@ -33,7 +33,7 @@
         vm.name = 'mdoCard';
         vm.description = 'hello my name is g';
         vm.authorName = 'gr';
-        vm.tags = ['angular', 'html']; 
+        vm.tags = ['angular', 'html'];
       },
       link: function (scope, element, attrs) {
         /*jshint unused:false */
