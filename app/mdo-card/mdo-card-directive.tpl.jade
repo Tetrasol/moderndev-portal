@@ -1,0 +1,11 @@
+md-card
+  .mdo-card-img(layout-fill) appapap
+  
+  md-card-content(layout='row')
+      p(flex) {{mdoCard.description}}
+      h6(flex='15') {{mdoCard.authorName}}
+      .mdo-card-img(flex='10') img
+      
+  md-card-footer.md-actions(layout='row', layout-align='start start')
+    md-button.mdo-card-tag(ng-repeat='tag in mdoCard.tags') {{tag}}
+    
