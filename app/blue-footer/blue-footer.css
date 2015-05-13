@@ -1,7 +1,9 @@
 .title-color {
   color: #ffcc66;
 }
-
+.footerContent{
+  margin-top: 4%;
+}
 .social-network a{
   display:inline-block;
   width :36px;
