@@ -1,0 +1,31 @@
+.title-color {
+  color: #ffcc66;
+}
+
+.social-network a{
+  display:inline-block;
+  width :36px;
+  height:36px;
+  background-color:red;
+  margin:2px;
+}
+.social-network .facebook{
+  background:url(../../images/social-media-sprite-2.png) -36px 0;
+}
+
+.social-network .facebook:hover{
+  background:url(../../images/social-media-sprite-2.png) -36px 36px;
+}
+.social-network .twitter{
+  background:url(../../images/social-media-sprite-2.png) -72px 0px;
+}
+
+.social-network .twitter:hover{
+  background:url(../../images/social-media-sprite-2.png) -72px 36px;
+}
+.social-network .google-plus{
+  background:url(../../images/social-media-sprite-2.png) -108px 0px;
+}
+.social-network .google-plus:hover{
+  background:url(../../images/social-media-sprite-2.png) -108px 36px;
+}
