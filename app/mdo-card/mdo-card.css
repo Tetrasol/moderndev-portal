@@ -7,4 +7,12 @@
 .mdo-card-tag {
   background-color: #ffcc66;
   margin-right: 1%;
+  max-height: 1%;
+  height: 30px;
+}
+
+.mdo-card-header{
+  background-color: gray;
+  border-top-left-radius: 1%;
+  border-top-right-radius: 1%;
 }
