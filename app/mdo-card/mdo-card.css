@@ -1,5 +1,7 @@
 .mdo-card-img {
   background-color: gray;
+  height: 50px;
+  width: 50px;
 }
 
 .mdo-card-tag {

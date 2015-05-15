@@ -1,11 +1,14 @@
-md-card
-  .mdo-card-img(layout-fill) appapap
-  
-  md-card-content(layout='row')
-      p(flex) {{mdoCard.description}}
-      h6(flex='15') {{mdoCard.authorName}}
-      .mdo-card-img(flex='10') img
-      
-  md-card-footer.md-actions(layout='row', layout-align='start start')
-    md-button.mdo-card-tag(ng-repeat='tag in mdoCard.tags') {{tag}}
-    
+div(ng-repeat='article in mdoCard.articles')
+  md-card
+    .mdo-card-img(layout-fill) {{article.name}}
+
+    md-card-content(layout='row')
+        p(flex) {{article.description}}
+
+
+    md-card-footer.md-actions(layout='row', layout-align='start start')
+      md-button.mdo-card-tag(ng-repeat='tag in article.tags' flex) {{tag}}
+      div(flex)
+      h6 author: {{article.authorName}}
+      img(src='{{article.image || "../../images/defaultPerson.png"}}').mdo-card-img
+
