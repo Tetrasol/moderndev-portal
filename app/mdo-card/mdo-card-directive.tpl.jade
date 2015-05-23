@@ -1,10 +1,11 @@
 div(layout="row" layout-sm="column" layout-wrap)
   md-card(ng-repeat='article in mdoCard.articles' flex-sm="95" flex-gt-md="25").mdo-card-default
     md-card-header.mdo-card-header
-      img(layout-sm=".img-rotate" src="{{article.headerImg}}").mdo-card-img-header
+      img(layout-sm=".img-rotate" src="{{article.headerImg}}" href="/article/{{article.link}}").mdo-card-img-header
 
     md-card-content.mdo-card-content
         p(flex) {{article.description}}
+        md-button.md-raised.md-primary(href="/article/{{article.link}}") Article
 
     md-card-footer.md-actions(layout="row" layout-align-sm="start center" layout-align="space-between center" hide-sm)
       md-tags(layout="row")

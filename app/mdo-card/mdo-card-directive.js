@@ -33,6 +33,7 @@
         vm.articles = [{
             headerImg: 'http://www.cheynewallace.com/wp-content/uploads/2013/12/AngularJS_Banner.jpg',
             name: 'spider-senses 101',
+            link: 'spider-senses-101',
             authorName: 'ParkerPeters',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nulla sapien, lobortis eget ' +
             'sodales et, mollis nec ex. Nulla egestas tellus eget diam tincidunt dictum. Nunc sed eros dignissim est ' +
@@ -47,6 +48,7 @@
           {
             headerImg: 'http://mooccircle.com/wp-content/uploads/2014/12/python1.png',
             name: 'Upside Down Camera Shots',
+            link: 'upside-down-camera-shots',
             authorName: 'ParkerPeters',
             description: 'Class aptent taciti sociosqu ad litora torquent per conubia nostra, ' +
             'per inceptos himenaeos. Integer feugiat felis non ullamcorper sodales. Duis sit amet ' +
@@ -60,6 +62,7 @@
           {
             headerImg: 'http://mooccircle.com/wp-content/uploads/2014/12/python1.png',
             name: 'Upside Down Camera Shots',
+            link: 'upside-down-camera-shots',
             authorName: 'ParkerPeters',
             description: 'Class aptent taciti sociosqu ad litora torquent per conubia nostra,' +
             ' per inceptos himenaeos. Integer feugiat felis non ullamcorper sodales. Duis sit amet ' +
@@ -74,6 +77,7 @@
           {
             headerImg: 'http://mooccircle.com/wp-content/uploads/2014/12/python1.png',
             name: 'Upside Down Camera Shots',
+            link: 'upside-down-camera-shots',
             authorName: 'ParkerPeters',
             description: 'Class aptent taciti sociosqu ad litora torquent per ' +
             'conubia nostra, per inceptos himenaeos. Integer feugiat felis non ullamcorper sodales.' +
@@ -88,6 +92,7 @@
           {
             headerImg: 'http://static.thetechjournal.net/wp-content/uploads/2010/08/android-header.jpg',
             name: 'Its tough been super',
+            link: 'its-tough-been-super',
             authorName: 'ParkerPeters',
             description: 'Nam sit amet velit eu erat tincidunt gravida ac sed nisi. Suspendisse ' +
             'non dictum nibh, at pretium est. Cum sociis natoque penatibus et magnis dis parturient ' +
