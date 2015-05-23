@@ -1,14 +1,15 @@
-md-card(ng-repeat='article in mdoCard.articles')
-  md-card-header(layout-fill).mdo-card-header {{article.name}}
+div(layout="row" layout-sm="column" layout-wrap)
+  md-card(ng-repeat='article in mdoCard.articles' flex-sm="95" flex-gt-md="25").mdo-card-default
+    md-card-header.mdo-card-header
+      img(layout-sm=".img-rotate" src="{{article.headerImg}}").mdo-card-img-header
 
-  md-card-content(layout-fill)
-      p(flex) {{article.description}}
+    md-card-content.mdo-card-content
+        p(flex) {{article.description}}
 
-  md-card-footer.md-actions(layout="row" layout-align="space-between center")
-    md-tags(layout="row")
-      md-button.mdo-card-tag(ng-repeat='tag in article.tags') {{tag}}
+    md-card-footer.md-actions(layout="row" layout-align-sm="start center" layout-align="space-between center" hide-sm)
+      md-tags(layout="row")
+        md-button.mdo-card-tag(ng-repeat='tag in article.tags') {{tag}}
 
-    md-author
-      b author: {{article.authorName}}
-      img(src="{{article.image || '../../images/defaultPerson.png'}}").mdo-card-img
-
+      md-card(layout="row" layout-align="space-between center")
+        img(src="{{article.image || '../../images/defaultPerson.png'}}").mdo-card-img-author
+        b {{article.authorName}}
