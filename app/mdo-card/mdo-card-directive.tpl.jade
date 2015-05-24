@@ -4,8 +4,14 @@ div(layout="row" layout-sm="column" layout-wrap)
       img(layout-sm=".img-rotate" src="{{article.headerImg}}" href="/article/{{article.link}}").mdo-card-img-header
 
     md-card-content.mdo-card-content
-        p(flex) {{article.description}}
-        md-button.md-raised.md-primary(href="/article/{{article.link}}") Article
+      p(flex) {{article.description}}
+      div(layout="row" layout-align="space-between center" flex)
+        md-button.md-raised.md-primary(href="/article/{{article.link}}" flex="25") Article
+        md-card(layout="row" layout-align="space-between center" flex="25")
+          div
+            i.fa.fa-thumbs-o-up {{article.posRating}}
+          div
+            i.fa.fa-thumbs-o-down {{article.negRating}}
 
     md-card-footer.md-actions(layout="row" layout-align-sm="start center" layout-align="space-between center" hide-sm)
       md-tags(layout="row")
