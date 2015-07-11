@@ -13,10 +13,11 @@
       'ui.router',
     /* Custom Modules*/
       'home',
-      'blueFooter',
-      'blueHeader',
+      'mdoFooter',
+      'mdoHeader',
       'mdoCard',
       'aboutUs',
-      'articles'
+      'articles',
+      'mdoNavbar'
     ]);
 }());

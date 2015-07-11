@@ -1,19 +1,19 @@
 /*global describe, beforeEach, it, expect, inject, module*/
 'use strict';
 
-describe('blueHeader', function () {
+describe('mdoFooter', function () {
   var scope
     , element;
 
-  beforeEach(module('blueHeader', 'blue-header/blue-header-directive.tpl.html'));
+  beforeEach(module('mdoFooter', 'mdo-footer/mdo-footer-directive.tpl.html'));
 
   beforeEach(inject(function ($compile, $rootScope) {
     scope = $rootScope.$new();
-    element = $compile(angular.element('<blue-header></blue-header>'))(scope);
+    element = $compile(angular.element('<mdo-footer></mdo-footer>'))(scope);
   }));
 
   it('should have correct text', function () {
     scope.$apply();
-    expect(element.isolateScope().blueHeader.name).toEqual('blueHeader');
+    expect(element.isolateScope().mdoFooter.name).toEqual('mdoFooter');
   });
 });
