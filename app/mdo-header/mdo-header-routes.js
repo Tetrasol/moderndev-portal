@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('blueHeader')
+    .module('mdoHeader')
     .config(config);
 
   function config() {

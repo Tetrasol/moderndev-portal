@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('blueFooter')
+    .module('mdoFooter')
     .config(config);
 
   function config() {

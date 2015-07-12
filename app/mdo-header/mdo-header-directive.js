@@ -3,34 +3,34 @@
 
   /**
    * @ngdoc directive
-   * @name blueHeader.directive:blueHeader
+   * @name mdoHeader.directive:mdoHeader
    * @restrict EA
    * @element
    *
    * @description
    *
    * @example
-     <example module="blueHeader">
+     <example module="mdoHeader">
        <file name="index.html">
-        <blue-header></blue-header>
+        <mdo-header></mdo-header>
        </file>
      </example>
    *
    */
   angular
-    .module('blueHeader')
-    .directive('blueHeader', blueHeader);
+    .module('mdoHeader')
+    .directive('mdoHeader', mdoHeader);
 
-  function blueHeader() {
+  function mdoHeader() {
     return {
       restrict: 'EA',
       scope: {},
-      templateUrl: 'blue-header/blue-header-directive.tpl.html',
+      templateUrl: 'mdo-header/mdo-header-directive.tpl.html',
       replace: false,
-      controllerAs: 'blueHeader',
+      controllerAs: 'mdoHeader',
       controller: function () {
         var vm = this;
-        vm.name = 'blueHeader';
+        vm.name = 'mdoHeader';
       },
       link: function (scope, element, attrs) {
         /*jshint unused:false */

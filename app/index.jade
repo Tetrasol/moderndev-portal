@@ -12,28 +12,13 @@ html(lang='en' data-ng-app='moderndev')
     |<!-- inject:css -->
     |<!-- endinject -->
   body(layout-fill)
-    blue-header(flex-order='1')
-    
-    md-content.md-padding(layout='column', layout-fill)
-      md-tabs(flex, md-border-bottom)
-        md-tab(label='Articles', ui-sref='articles')
-          md-content(layout-align='space-between center').md-padding
-            div(data-ui-view, flex, flex-order='2')
-          
-        md-tab(label='Tutorials')
-          md-content.md-padding
-            h1.md-display-2 Tutorials made by MDO
-        md-tab(label='Projects')
-          md-content.md-padding
-            h1.md-display-2 Projects lead by MDO
-        md-tab(label='Tools')
-          md-content.md-padding
-            h1.md-display-2 Tools built by MDO
-        md-tab(label='About', ui-sref='aboutUs')
-          div(data-ui-view, flex, flex-order='2')
+    mdo-header(flex-order='1')
 
+    mdo-navbar(flex-order='2')
+      
+    div(data-ui-view, flex, flex-order='3')
   
-    blue-footer(flex-order='3')
+    mdo-footer(flex-order='4')
     |<!-- bower:js -->
     |<!-- endbower -->
     |<!-- inject:js -->

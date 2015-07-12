@@ -2,11 +2,11 @@
   'use strict';
 
   /* @ngdoc object
-   * @name blueHeader
+   * @name mdoHeader
    * @description
    *
    */
   angular
-    .module('blueHeader', [
+    .module('mdoHeader', [
     ]);
 }());
