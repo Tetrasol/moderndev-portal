@@ -1,2 +1,15 @@
-md-content.md-padding
-	h1.md-display-2 About ModernDev.org (MDO)
+md-content.md-padding(layout='column', layout-fill)
+	md-toolbar
+		.md-toolbar-tools The Humble Beginnings
+			
+	md-content(layout-padding)
+		md-subheader Our Background
+		p {{aboutUs.ourBackground}}
+		
+		md-subheader Meet our Team
+		p {{aboutUs.meetOurTeam}}
+		
+		md-list(layout='row', layout-fill)
+			md-list-item.md-2-line(ng-repeat='member in aboutUs.ourTeam')
+				span {{member.name}}
+				

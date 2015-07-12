@@ -8,6 +8,5 @@
    */
   angular
     .module('aboutUs', [
-      'ui.router'
     ]);
 }());
