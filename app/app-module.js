@@ -8,12 +8,15 @@
    */
   angular
     .module('moderndev', [
+    /* Base Modules*/
       'ngMaterial',
       'ui.router',
+    /* Custom Modules*/
       'home',
       'blueFooter',
       'blueHeader',
-      'greyBody',
-      'mdoCard'
+      'mdoCard',
+      'aboutUs',
+      'articles'
     ]);
 }());

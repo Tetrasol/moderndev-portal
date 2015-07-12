@@ -2,12 +2,12 @@
   'use strict';
 
   /* @ngdoc object
-   * @name greyBody
+   * @name aboutUs
    * @description
    *
    */
   angular
-    .module('greyBody', [
+    .module('aboutUs', [
       'ui.router'
     ]);
 }());

@@ -3,34 +3,34 @@
 
   /**
    * @ngdoc directive
-   * @name greyBody.directive:greyBody
+   * @name mdoNavbar.directive:mdoNavbar
    * @restrict EA
    * @element
    *
    * @description
    *
    * @example
-     <example module="greyBody">
+     <example module="mdoNavbar">
        <file name="index.html">
-        <grey-body></grey-body>
+        <mdo-navbar></mdo-navbar>
        </file>
      </example>
    *
    */
   angular
-    .module('greyBody')
-    .directive('greyBody', greyBody);
+    .module('mdoNavbar')
+    .directive('mdoNavbar', mdoNavbar);
 
-  function greyBody() {
+  function mdoNavbar() {
     return {
       restrict: 'EA',
       scope: {},
-      templateUrl: 'grey-body/grey-body-directive.tpl.html',
+      templateUrl: 'mdo-navbar/mdo-navbar-directive.tpl.html',
       replace: false,
-      controllerAs: 'greyBody',
+      controllerAs: 'mdoNavbar',
       controller: function () {
         var vm = this;
-        vm.name = 'greyBody';
+        vm.name = 'mdoNavbar';
       },
       link: function (scope, element, attrs) {
         /*jshint unused:false */

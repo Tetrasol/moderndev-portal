@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('greyBody')
+    .module('mdoNavbar')
     .config(config);
 
   function config() {
