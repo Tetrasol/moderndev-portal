@@ -3,34 +3,34 @@
 
   /**
    * @ngdoc directive
-   * @name blueFooter.directive:blueFooter
+   * @name mdoFooter.directive:mdoFooter
    * @restrict EA
    * @element
    *
    * @description
    *
    * @example
-     <example module="blueFooter">
+     <example module="mdoFooter">
        <file name="index.html">
-        <blue-footer></blue-footer>
+        <mdo-footer></mdo-footer>
        </file>
      </example>
    *
    */
   angular
-    .module('blueFooter')
-    .directive('blueFooter', blueFooter);
+    .module('mdoFooter')
+    .directive('mdoFooter', mdoFooter);
 
-  function blueFooter() {
+  function mdoFooter() {
     return {
       restrict: 'EA',
       scope: {},
-      templateUrl: 'blue-footer/blue-footer-directive.tpl.html',
+      templateUrl: 'mdo-footer/mdo-footer-directive.tpl.html',
       replace: false,
-      controllerAs: 'blueFooter',
+      controllerAs: 'mdoFooter',
       controller: function () {
         var vm = this;
-        vm.name = 'blueFooter';
+        vm.name = 'mdoFooter';
       },
       link: function (scope, element, attrs) {
         /*jshint unused:false */

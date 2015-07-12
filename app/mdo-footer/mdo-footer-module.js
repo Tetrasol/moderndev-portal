@@ -2,11 +2,11 @@
   'use strict';
 
   /* @ngdoc object
-   * @name blueFooter
+   * @name mdoFooter
    * @description
    *
    */
   angular
-    .module('blueFooter', [
+    .module('mdoFooter', [
     ]);
 }());
