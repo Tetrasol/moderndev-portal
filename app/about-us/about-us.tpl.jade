@@ -1,15 +1,17 @@
-md-content.md-padding(layout='column', layout-fill)
-	md-toolbar
-		.md-toolbar-tools The Humble Beginnings
+md-content.md-padding(layout='column', layout-fill, layout-padding)
+	md-subheader The Humble Beginnings
 			
-	md-content(layout-padding)
-		md-subheader Our Background
-		p {{aboutUs.ourBackground}}
+	p ModernDev.org is a small group of hardware and software engineers aiming to improve their skills while helping the technology community grow. Based in Saint Louis, Missouri, we hope to help the thriving startup community.
 		
-		md-subheader Meet our Team
-		p {{aboutUs.meetOurTeam}}
-		
-		md-list(layout='row', layout-fill)
-			md-list-item.md-2-line(ng-repeat='member in aboutUs.ourTeam')
-				span {{member.name}}
-				
+	md-subheader Meet our Team
+	
+	p We are a small team of hardware and software engineers. We dream big and want to explore the world of technology. Our goals are to better ourselves and in the process share with others what we learn. If you share our vision, you too can be part of our team!
+	
+	md-list(layout='row', layout-align='space-around center')
+		md-list-item.md-2-line(ng-repeat='member in aboutUs.ourTeam')
+			img.md-avatar(ng-src='{{member.avatarImg}}')
+			.md-list-item-text
+				h3 {{member.name}}
+				h6 {{member.role}}	
+	
+	md-button.md-raised.md-primary Contact Us
